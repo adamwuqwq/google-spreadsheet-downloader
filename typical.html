@@ -1,0 +1,409 @@
+<html>
+  <head>
+    <meta name="google" content="notranslate"/>
+    <meta name="viewport" content="target-densitydpi=device-dpi,user-scalable=1,minimum-scale=1,maximum-scale=2.5,initial-scale=1,width=device-width"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;"/>
+    <meta name="referrer" content="origin"/>
+    <title>Untitled spreadsheet - Google ドライブ</title>
+    <link rel="shortcut icon" href="//ssl.gstatic.com/docs/spreadsheets/favicon3.ico"/>
+    <link href="/static/spreadsheets2/client/css/3256512442-waffle_k_ltr.css" type="text/css" rel="stylesheet" nonce="Du3__C5piG--FGesubaDMA"/>
+    <style type="text/css" nonce="Du3__C5piG--FGesubaDMA">
+        html { overflow: visible; }
+        #sheets-viewport { overflow: auto; }
+        #sheets-viewport.widget-viewport { overflow: hidden; }
+        .grid-container { overflow: visible; background: white;}
+        .grid-table-container { overflow: visible; }
+        #top-bar {
+          margin: 0;
+          overflow: hidden;
+        }
+        #top-bar {
+          border-bottom: 1px solid #ccc;
+          padding: 6px 6px 0;
+        }
+        #doc-title { padding-bottom: 5px; }
+        #doc-title .name { font-size: 15px; }
+        #sheet-menu {
+          font-size: 13px;
+          margin: 6px 0 0;
+          padding: 0 0 5px;
+        }
+        #sheet-menu li {
+          display: inline;
+          list-style-type: none;
+          margin: 0;
+          padding: 5px 8px;
+        }
+        #sheet-menu li.active {
+          background-color: #fff;
+          font-weight: bold;
+          border: 1px solid #999;
+        }
+        #top-bar #sheet-menu li.active {
+          border-bottom: 0;
+        }
+        #sheet-menu a, #sheet-menu a:visited { color: #07c; }
+        #footer {
+          background: #f0f0f0;
+          border-top: 1px #ccc solid;
+          border-bottom: 1px #ccc solid;
+          font-size: 13;
+          padding: 10px 10px;
+        }
+        .dash {
+          padding: 0 6px;
+        }
+        .ritz .waffle a { color: inherit; }.ritz .waffle .s1{border-right: none;background-color:#ffffff;text-align:left;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;color:#1155cc;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s0{background-color:#ffffff;text-align:left;color:#000000;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}</style>
+    <script type="text/javascript" nonce="Du3__C5piG--FGesubaDMA">
+        var activeSheetId;
+
+        function switchToSheet(id) {
+          if (document.getElementById('sheet-menu')) {
+            document.getElementById('sheet-button-' + activeSheetId)
+                .className = '';
+            document.getElementById('sheet-button-' + id).className = 'active';
+          }
+
+          document.getElementById(activeSheetId).style.display = 'none';
+          document.getElementById(id).style.display = '';
+          activeSheetId = id;
+
+          // posObjs() is defined in embeddedObjectJs (see EmbeddedObjectHtmlBuilder.java)
+          posObjs();
+          return false;
+        }
+
+        function init() {
+        var optPageSwitcher;
+
+        function resize() {
+          var optMobileWebHeader = document.getElementById('docs-ml-header-id');
+          var optTopBar = document.getElementById('top-bar');
+          var optFooter = document.getElementById('footer');
+          var sheetsViewport = document.getElementById('sheets-viewport');
+
+          if (optMobileWebHeader) {
+            sheetsViewport.style.marginTop = optMobileWebHeader.offsetHeight +
+                (optTopBar ? optTopBar.offsetHeight : 0) + 'px';
+          }
+          var adjustedHeight = window.innerHeight -
+              (optTopBar ? optTopBar.offsetHeight : 0) -
+              (optFooter ? optFooter.offsetHeight : 0);
+          var adjustedWidth = window.innerWidth;
+          sheetsViewport.style.width = (adjustedWidth + 'px');
+          sheetsViewport.style.height = (adjustedHeight + 'px');
+          if (optPageSwitcher) {
+            optPageSwitcher.resize(adjustedWidth, adjustedHeight);
+          }
+        }
+        resize();
+        window.onresize = resize;
+        var currentUrl = window.location.href;
+        var newUrl = currentUrl.replace('?sle=true&amp;', '?');
+        newUrl = newUrl.replace('?sle=true', '');
+        newUrl = newUrl.replace('&amp;sle=true&amp;', '&amp;');
+        newUrl = newUrl.replace('&amp;sle=true', '');
+        window.history.replaceState(null, '', newUrl);
+        }
+        </script>
+    <script nonce="Du3__C5piG--FGesubaDMA">_docs_flag_initialData={"docs-mwid":false,"docs-smheo":false,"info_params":{"includes_info_params":true},"ilcm":{"eui":"ADFN-ctruRB0csUphnsS_ydJy-xtr039GqzPmZ6NPXOMvrOz-I0L-2tPRMCYD_rB3rWt7VXhJRJ6","je":1,"sstu":1653158153384601,"si":"CI7l9YOe8fcCFQg9BwgdJAYMDQ","gsc":0,"ei":[5700019,5700422,5700559,5700884,5701034,5701927,5702135,5702445,5702785,5702912,5702936,5703182,5703259,5703839,5703913,5703938,5704063,5704144,5704351,5704571,5704621,5704641,5704883,5705039,5705301,5705777,5705891,5706007,5706069,5706169,5706270,5706523,5706661,5706933,5707047,5707204,5707445,5707609,5707711,5707819,5707941,5708560,5708870,5708886,5709085,5709326,5709357,5709476,5709661,5709673,5709709,5710692,5710744,5710938,5711230,5711471,5711522,5711550,5712146,5712298,5712469,5712473,5712477,5712635,5712909,5712913,5713195,5713207,5713223,5713554,5714310,5714326,5714465,5714550,5714628,5714674,5714800,5714839,5714843,5715364,5715824,5716149,5716457,5717157,5717949,5719462,5719482,5719527,5720060,5720568,5720788,5720925,5721307,5721814,5722189,5722567,5723284,5723365,5723679,5723739,5723871,5723987,5724085,5724435,5724533,5724896,5725052,5725240,5725511,5726494,5726695,5726752,5727063,5727257,5727853,5727901,5728475,5729092,5729206,5730225,5730285,5730485,5731174,5731783,5731835,5732251,5732342,5732541,5733263,5733768,5734392,5734571,5734632,5734896,5735134,5735252,5735670,5735806,5736431,5736531,5737153,5737196,5737254,5738081,5738413,5738509,5738649,5738898,5739308,5739837,5740008,5740186,5740341,5740731,5740814,5740868,5741522,5741578,5741734,5741775,5741994,5743144,5743450,5743550,5743787,5744268,5744348,5744691,5744833,5745003,5745438,5745602,5745622,5746312,5746563,5746603,5746724,5746864,5747355,5747484,5747881,5747941,5748129,5748290,5748468,5748488,5748612,5748950,5748991,5749387,5749679,5749715,5749835,5750110,5750253,5750313,5750371,5750790,5751115,5751157,5751461,5752610,5752734,5752962,5753046,5753433,5753561,5753681,5753856,5754210,5754269,5754467,5754574,5755018,5755409,5755429,5755545,5755664,5755964,5756128,5756188,5756254,5756335,5756655,5756995,5757382,5757412,5757581,5757773,5758415,5758674,5758802,5759107,5759462,5759582,5759771,5759955,5760127,5760307,5760390,5760410,5760450,5760470,5760760,5761447,5761584,5761626,5761646,5761869,5763112,5763213,5763475,5763871,5765747,5765915,5766203,5767006,5767386,5768789,13702623,48966202,49323018,49341837,49369525,49372039,49375222,49376668,49377540,49378789,49423266,49424980,49430024],"crc":0,"cvi":[]},"drive_url":"//drive.google.com?usp\u003dsheets_web","docs-sup":"/spreadsheets"}; _docs_flag_cek=''; if (window['DOCS_timing']) {DOCS_timing['ifdld']=new Date().getTime();}</script>
+  </head>
+  <script nonce="Du3__C5piG--FGesubaDMA">document.addEventListener('DOMContentLoaded', init);</script>
+  <body class="docs-gm">
+    <div id="top-bar">
+      <div id="doc-title">
+        <span class="name">Untitled spreadsheet</span>
+      </div>
+      <ul id="sheet-menu">
+        <li id="sheet-button-0">
+          <a href="#">test1</a>
+        </li>
+        <script nonce="Du3__C5piG--FGesubaDMA">document.addEventListener('DOMContentLoaded', function() {document.getElementById('sheet-button-0').addEventListener('click', function () {return switchToSheet('0');});});</script>
+        <li id="sheet-button-1991612827">
+          <a href="#">test2</a>
+        </li>
+        <script nonce="Du3__C5piG--FGesubaDMA">document.addEventListener('DOMContentLoaded', function() {document.getElementById('sheet-button-1991612827').addEventListener('click', function () {return switchToSheet('1991612827');});});</script>
+      </ul>
+    </div>
+    <div id="sheets-viewport">
+      <div id="0" style="display:none;position:relative;" dir="ltr">
+        <div class="ritz grid-container" dir="ltr">
+          <table class="waffle" cellspacing="0" cellpadding="0">
+            <thead>
+              <tr>
+                <th class="row-header freezebar-origin-ltr header-shim row-header-shim"/>
+                <th id="0C0" style="width:100px;" class="header-shim"/>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="height: 20px">
+                <th id="0R0" style="height: 20px;" class="row-headers-background row-header-shim">
+                  <div class="row-header-wrapper" style="line-height: 20px">1</div>
+                </th>
+                <td class="s0" dir="ltr">don't click that!</td>
+              </tr>
+              <tr style="height: 20px">
+                <th id="0R1" style="height: 20px;" class="row-headers-background row-header-shim">
+                  <div class="row-header-wrapper" style="line-height: 20px">2</div>
+                </th>
+                <td class="s1 softmerge" dir="ltr">
+                  <div class="softmerge-inner" style="width:198px;left:-1px">
+                    <a target="_blank" rel="noreferrer" href="https://www.google.com/url?q=http://www.imgur.com/a/G6rU8&amp;sa=D&amp;source=editors&amp;ust=1653161753373796&amp;usg=AOvVaw0y7MQlclLKwYBOK2k3QPn3">www.imgur.com/a/G6rU8</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="1991612827" style="display:none;position:relative;" dir="ltr">
+        <div class="ritz grid-container" dir="ltr">
+          <table class="waffle" cellspacing="0" cellpadding="0">
+            <thead>
+              <tr>
+                <th class="row-header freezebar-origin-ltr header-shim row-header-shim"/>
+                <th id="1991612827C0" style="width:100px;" class="header-shim"/>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="height: 20px">
+                <th id="1991612827R0" style="height: 20px;" class="row-headers-background row-header-shim">
+                  <div class="row-header-wrapper" style="line-height: 20px">1</div>
+                </th>
+                <td class="s0" dir="ltr">don't click that!</td>
+              </tr>
+              <tr style="height: 20px">
+                <th id="1991612827R1" style="height: 20px;" class="row-headers-background row-header-shim">
+                  <div class="row-header-wrapper" style="line-height: 20px">2</div>
+                </th>
+                <td class="s1 softmerge" dir="ltr">
+                  <div class="softmerge-inner" style="width:198px;left:-1px">
+                    <a target="_blank" rel="noreferrer" href="https://www.google.com/url?q=https://bit.ly/3LuxQYI&amp;sa=D&amp;source=editors&amp;ust=1653161753376572&amp;usg=AOvVaw0APFuYmBalIavfJYBwuAHO">https://bit.ly/3LuxQYI</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <span>Published by <a target="_blank" title="Learn more about Google Sheets" href="https://docs.google.com/spreadsheets/?usp=sheets_web">Google Sheets</a></span>
+      <span class="dash">–</span>
+      <a href="https://docs.google.com/abuse?id=AKkXjoxMK0tmMWH7hzFydywGiHFl_jinVjwlhHiFQby1qba42d1QCgdTrvT9vLK0LxJtS5GlLSk1xUe_Qq7j8as:0">不正行為の報告</a>
+      <span class="dash">–</span>
+      <span>Updated automatically every 5 minutes</span>
+    </div>
+    <script type="text/javascript" nonce="Du3__C5piG--FGesubaDMA">activeSheetId = '0'; switchToSheet('0');</script>
+  </body>
+</html>
+
+0 matches found!
+Step 3: Extracting name and gid for each worksheet...
+It seems that the document only contains 1 sheet!
+Done!
+Step 4: Downloading .csv file for each worksheet...
+default.csv...done!
+PS C:\Users\adamwuqwq\google-spreadsheet-downloader> python download.py https://docs.google.com/spreadsheets/d/e/2PACX-1vTfW3r8Gw7qs8X5zK468KOxjf3YtqI9Y4Bv2CL05gdynrF2FNAnZmqlgPLJJhiwZN4_mn3y-uLil3MX/pubhtml
+Step 1: Fetching html contents from given URL...
+Done!
+Step 2: Matching specified pattern in HTML file...
+<html>
+  <head>
+    <meta name="google" content="notranslate"/>
+    <meta name="viewport" content="target-densitydpi=device-dpi,user-scalable=1,minimum-scale=1,maximum-scale=2.5,initial-scale=1,width=device-width"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;"/>
+    <meta name="referrer" content="origin"/>
+    <title>Untitled spreadsheet - Google ドライブ</title>
+    <link rel="shortcut icon" href="//ssl.gstatic.com/docs/spreadsheets/favicon3.ico"/>
+    <link href="/static/spreadsheets2/client/css/3256512442-waffle_k_ltr.css" type="text/css" rel="stylesheet" nonce="-l5zEfATO1YH7QudK7KWJQ"/>
+    <style type="text/css" nonce="-l5zEfATO1YH7QudK7KWJQ">
+        html { overflow: visible; }
+        #sheets-viewport { overflow: auto; }
+        #sheets-viewport.widget-viewport { overflow: hidden; }
+        .grid-container { overflow: visible; background: white;}
+        .grid-table-container { overflow: visible; }
+        #top-bar {
+          margin: 0;
+          overflow: hidden;
+        }
+        #top-bar {
+          border-bottom: 1px solid #ccc;
+          padding: 6px 6px 0;
+        }
+        #doc-title { padding-bottom: 5px; }
+        #doc-title .name { font-size: 15px; }
+        #sheet-menu {
+          font-size: 13px;
+          margin: 6px 0 0;
+          padding: 0 0 5px;
+        }
+        #sheet-menu li {
+          display: inline;
+          list-style-type: none;
+          margin: 0;
+          padding: 5px 8px;
+        }
+        #sheet-menu li.active {
+          background-color: #fff;
+          font-weight: bold;
+          border: 1px solid #999;
+        }
+        #top-bar #sheet-menu li.active {
+          border-bottom: 0;
+        }
+        #sheet-menu a, #sheet-menu a:visited { color: #07c; }
+        #footer {
+          background: #f0f0f0;
+          border-top: 1px #ccc solid;
+          border-bottom: 1px #ccc solid;
+          font-size: 13;
+          padding: 10px 10px;
+        }
+        .dash {
+          padding: 0 6px;
+        }
+        .ritz .waffle a { color: inherit; }.ritz .waffle .s1{border-right: none;background-color:#ffffff;text-align:left;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;color:#1155cc;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s0{background-color:#ffffff;text-align:left;color:#000000;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}</style>
+    <script type="text/javascript" nonce="-l5zEfATO1YH7QudK7KWJQ">
+        var activeSheetId;
+
+        function switchToSheet(id) {
+          if (document.getElementById('sheet-menu')) {
+            document.getElementById('sheet-button-' + activeSheetId)
+                .className = '';
+            document.getElementById('sheet-button-' + id).className = 'active';
+          }
+
+          document.getElementById(activeSheetId).style.display = 'none';
+          document.getElementById(id).style.display = '';
+          activeSheetId = id;
+
+          // posObjs() is defined in embeddedObjectJs (see EmbeddedObjectHtmlBuilder.java)
+          posObjs();
+          return false;
+        }
+
+        function init() {
+        var optPageSwitcher;
+
+        function resize() {
+          var optMobileWebHeader = document.getElementById('docs-ml-header-id');
+          var optTopBar = document.getElementById('top-bar');
+          var optFooter = document.getElementById('footer');
+          var sheetsViewport = document.getElementById('sheets-viewport');
+
+          if (optMobileWebHeader) {
+            sheetsViewport.style.marginTop = optMobileWebHeader.offsetHeight +
+                (optTopBar ? optTopBar.offsetHeight : 0) + 'px';
+          }
+          var adjustedHeight = window.innerHeight -
+              (optTopBar ? optTopBar.offsetHeight : 0) -
+              (optFooter ? optFooter.offsetHeight : 0);
+          var adjustedWidth = window.innerWidth;
+          sheetsViewport.style.width = (adjustedWidth + 'px');
+          sheetsViewport.style.height = (adjustedHeight + 'px');
+          if (optPageSwitcher) {
+            optPageSwitcher.resize(adjustedWidth, adjustedHeight);
+          }
+        }
+        resize();
+        window.onresize = resize;
+        var currentUrl = window.location.href;
+        var newUrl = currentUrl.replace('?sle=true&amp;', '?');
+        newUrl = newUrl.replace('?sle=true', '');
+        newUrl = newUrl.replace('&amp;sle=true&amp;', '&amp;');
+        newUrl = newUrl.replace('&amp;sle=true', '');
+        window.history.replaceState(null, '', newUrl);
+        }
+        </script>
+    <script nonce="-l5zEfATO1YH7QudK7KWJQ">_docs_flag_initialData={"docs-mwid":false,"docs-smheo":false,"info_params":{"includes_info_params":true},"ilcm":{"eui":"ADFN-ctruRB0csUphnsS_ydJy-xtr039GqzPmZ6NPXOMvrOz-I0L-2tPRMCYD_rB3rWt7VXhJRJ6","je":1,"sstu":1653158153384601,"si":"CI7l9YOe8fcCFQg9BwgdJAYMDQ","gsc":0,"ei":[5700019,5700422,5700559,5700884,5701034,5701927,5702135,5702445,5702785,5702912,5702936,5703182,5703259,5703839,5703913,5703938,5704063,5704144,5704351,5704571,5704621,5704641,5704883,5705039,5705301,5705777,5705891,5706007,5706069,5706169,5706270,5706523,5706661,5706933,5707047,5707204,5707445,5707609,5707711,5707819,5707941,5708560,5708870,5708886,5709085,5709326,5709357,5709476,5709661,5709673,5709709,5710692,5710744,5710938,5711230,5711471,5711522,5711550,5712146,5712298,5712469,5712473,5712477,5712635,5712909,5712913,5713195,5713207,5713223,5713554,5714310,5714326,5714465,5714550,5714628,5714674,5714800,5714839,5714843,5715364,5715824,5716149,5716457,5717157,5717949,5719462,5719482,5719527,5720060,5720568,5720788,5720925,5721307,5721814,5722189,5722567,5723284,5723365,5723679,5723739,5723871,5723987,5724085,5724435,5724533,5724896,5725052,5725240,5725511,5726494,5726695,5726752,5727063,5727257,5727853,5727901,5728475,5729092,5729206,5730225,5730285,5730485,5731174,5731783,5731835,5732251,5732342,5732541,5733263,5733768,5734392,5734571,5734632,5734896,5735134,5735252,5735670,5735806,5736431,5736531,5737153,5737196,5737254,5738081,5738413,5738509,5738649,5738898,5739308,5739837,5740008,5740186,5740341,5740731,5740814,5740868,5741522,5741578,5741734,5741775,5741994,5743144,5743450,5743550,5743787,5744268,5744348,5744691,5744833,5745003,5745438,5745602,5745622,5746312,5746563,5746603,5746724,5746864,5747355,5747484,5747881,5747941,5748129,5748290,5748468,5748488,5748612,5748950,5748991,5749387,5749679,5749715,5749835,5750110,5750253,5750313,5750371,5750790,5751115,5751157,5751461,5752610,5752734,5752962,5753046,5753433,5753561,5753681,5753856,5754210,5754269,5754467,5754574,5755018,5755409,5755429,5755545,5755664,5755964,5756128,5756188,5756254,5756335,5756655,5756995,5757382,5757412,5757581,5757773,5758415,5758674,5758802,5759107,5759462,5759582,5759771,5759955,5760127,5760307,5760390,5760410,5760450,5760470,5760760,5761447,5761584,5761626,5761646,5761869,5763112,5763213,5763475,5763871,5765747,5765915,5766203,5767006,5767386,5768789,13702623,48966202,49323018,49341837,49369525,49372039,49375222,49376668,49377540,49378789,49423266,49424980,49430024],"crc":0,"cvi":[]},"drive_url":"//drive.google.com?usp\u003dsheets_web","docs-sup":"/spreadsheets"}; _docs_flag_cek=''; if (window['DOCS_timing']) {DOCS_timing['ifdld']=new Date().getTime();}</script>
+  </head>
+  <script nonce="-l5zEfATO1YH7QudK7KWJQ">document.addEventListener('DOMContentLoaded', init);</script>
+  <body class="docs-gm">
+    <div id="top-bar">
+      <div id="doc-title">
+        <span class="name">Untitled spreadsheet</span>
+      </div>
+      <ul id="sheet-menu">
+        <li id="sheet-button-0">
+          <a href="#">test1</a>
+        </li>
+        <script nonce="-l5zEfATO1YH7QudK7KWJQ">document.addEventListener('DOMContentLoaded', function() {document.getElementById('sheet-button-0').addEventListener('click', function () {return switchToSheet('0');});});</script>
+        <li id="sheet-button-1991612827">
+          <a href="#">test2</a>
+        </li>
+        <script nonce="-l5zEfATO1YH7QudK7KWJQ">document.addEventListener('DOMContentLoaded', function() {document.getElementById('sheet-button-1991612827').addEventListener('click', function () {return switchToSheet('1991612827');});});</script>
+      </ul>
+    </div>
+    <div id="sheets-viewport">
+      <div id="0" style="display:none;position:relative;" dir="ltr">
+        <div class="ritz grid-container" dir="ltr">
+          <table class="waffle" cellspacing="0" cellpadding="0">
+            <thead>
+              <tr>
+                <th class="row-header freezebar-origin-ltr header-shim row-header-shim"/>
+                <th id="0C0" style="width:100px;" class="header-shim"/>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="height: 20px">
+                <th id="0R0" style="height: 20px;" class="row-headers-background row-header-shim">
+                  <div class="row-header-wrapper" style="line-height: 20px">1</div>
+                </th>
+                <td class="s0" dir="ltr">don't click that!</td>
+              </tr>
+              <tr style="height: 20px">
+                <th id="0R1" style="height: 20px;" class="row-headers-background row-header-shim">
+                  <div class="row-header-wrapper" style="line-height: 20px">2</div>
+                </th>
+                <td class="s1 softmerge" dir="ltr">
+                  <div class="softmerge-inner" style="width:198px;left:-1px">
+                    <a target="_blank" rel="noreferrer" href="https://www.google.com/url?q=http://www.imgur.com/a/G6rU8&amp;sa=D&amp;source=editors&amp;ust=1653161753373796&amp;usg=AOvVaw0y7MQlclLKwYBOK2k3QPn3">www.imgur.com/a/G6rU8</a>    
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="1991612827" style="display:none;position:relative;" dir="ltr">
+        <div class="ritz grid-container" dir="ltr">
+          <table class="waffle" cellspacing="0" cellpadding="0">
+            <thead>
+              <tr>
+                <th class="row-header freezebar-origin-ltr header-shim row-header-shim"/>
+                <th id="1991612827C0" style="width:100px;" class="header-shim"/>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="height: 20px">
+                <th id="1991612827R0" style="height: 20px;" class="row-headers-background row-header-shim">
+                  <div class="row-header-wrapper" style="line-height: 20px">1</div>
+                </th>
+                <td class="s0" dir="ltr">don't click that!</td>
+              </tr>
+              <tr style="height: 20px">
+                <th id="1991612827R1" style="height: 20px;" class="row-headers-background row-header-shim">
+                  <div class="row-header-wrapper" style="line-height: 20px">2</div>
+                </th>
+                <td class="s1 softmerge" dir="ltr">
+                  <div class="softmerge-inner" style="width:198px;left:-1px">
+                    <a target="_blank" rel="noreferrer" href="https://www.google.com/url?q=https://bit.ly/3LuxQYI&amp;sa=D&amp;source=editors&amp;ust=1653161753376572&amp;usg=AOvVaw0APFuYmBalIavfJYBwuAHO">https://bit.ly/3LuxQYI</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <span>Published by <a target="_blank" title="Learn more about Google Sheets" href="https://docs.google.com/spreadsheets/?usp=sheets_web">Google Sheets</a></span>
+      <span class="dash">–</span>
+      <a href="https://docs.google.com/abuse?id=AKkXjoxMK0tmMWH7hzFydywGiHFl_jinVjwlhHiFQby1qba42d1QCgdTrvT9vLK0LxJtS5GlLSk1xUe_Qq7j8as:0">不正行為の報告</a>
+      <span class="dash">–</span>
+      <span>Updated automatically every 5 minutes</span>
+    </div>
+    <script type="text/javascript" nonce="-l5zEfATO1YH7QudK7KWJQ">activeSheetId = '0'; switchToSheet('0');</script>
+  </body>
+</html>

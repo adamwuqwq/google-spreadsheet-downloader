@@ -37,20 +37,22 @@ else:
 # find all the that match the specified pattern
 print("Step 2: Matching specified pattern in HTML file...")
 
-sheet_pattern = "<li id=\"sheet-button-[0-9]+\"><a href=\"#\">[0-9]+</a></li>"
+sheet_pattern = "<li id=\"sheet-button-[0-9]+\"><a href=\"#\">.*?</a></li>"
 matched = re.findall(sheet_pattern, html_content)
 print(len(matched), "matches found!")
 
 # extract gid and name of each sheet from the matched strings
 print("Step 3: Extracting name and gid for each worksheet...")
 
-gid_pattern = "(?<=sheet-button-)[0-9]+(?=\"><a href)"
-name_pattern = "(?<=\">)[0-9]+(?=</a></li>)"
+gid_pattern = "(?<=sheet-button-)[0-9]+(?=\"><a href=\"#\">)"
+name_pattern = "(?<=<a href=\"#\">).*?(?=</a></li>)"
 sheets = {}
 if len(matched) != 0:
     for matches in matched:
+        print(matches)
         gid = re.findall(gid_pattern, matches)
         name = re.findall(name_pattern, matches)
+        print(gid, name)
         if len(gid) != 1 or len(name) != 1:
             error_exit("Invalid matched string! Please report it to developer!")
         else:
