@@ -49,10 +49,10 @@ name_pattern = "(?<=<a href=\"#\">).*?(?=</a></li>)"
 sheets = {}
 if len(matched) != 0:
     for matches in matched:
-        print(matches)
+        # print(matches)
         gid = re.findall(gid_pattern, matches)
         name = re.findall(name_pattern, matches)
-        print(gid, name)
+        # print(gid, name)
         if len(gid) != 1 or len(name) != 1:
             error_exit("Invalid matched string! Please report it to developer!")
         else:
